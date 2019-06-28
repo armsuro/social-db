@@ -1,0 +1,10 @@
+const path = require('path')
+
+require('dotenv').config();
+
+module.exports = {
+  'config':          path.resolve('config', 'sequelize.js'),
+  'migrations-path': path.resolve('sequelize', 'migrations', 'all'),
+  'models-path':     path.resolve('sequelize', 'models'),
+  'seeders-path':    [path.resolve('sequelize', 'seeders')]
+}
