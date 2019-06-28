@@ -24,11 +24,7 @@ const loadDir = (dir, tag) => {
 }
 
 Promise.all([
-    loadDir(__dirname + "/models/organizations", 'organizations'),
     loadDir(__dirname + "/models/users", 'users'),
-    loadDir(__dirname + "/models/other", 'other'),
-    loadDir(__dirname + "/models/pricing", 'pricing'),
-    loadDir(__dirname + "/models/sites", 'sites'),
 ]).then(() => {
 	for ( let t in db ) {
 		for ( let i in db[t] ) {
