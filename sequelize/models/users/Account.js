@@ -48,9 +48,9 @@ const Association = ({
 module.exports = seq => {
     const model = seq.define('Account', Schema, Options);
 
-    model.prototype.validPassword = async function(password) {
-        return await bcrypt.compareSync(password, this.password);
-    }
+    // model.prototype.validPassword = async function(password) {
+    //     return await bcrypt.compareSync(password, this.password);
+    // }
     
     model.associate = Association;
 
