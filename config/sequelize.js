@@ -1,4 +1,3 @@
-console.log(process.env)
 module.exports = {
     production: {
         "username": process.env.DB_USERNAME || "postgres",
