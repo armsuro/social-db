@@ -51,7 +51,6 @@ module.exports = {
                 'email': 'user@user.com',
                 'full_name': 'Suren Gaparyan',
                 'password': pass,
-                'organization_id': 1,
                 'role_id': 1
             }]);
         })
