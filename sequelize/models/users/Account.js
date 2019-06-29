@@ -19,10 +19,6 @@ const Schema = {
     'full_name': {
         'type': DataTypes.STRING,
         'allowNull': false
-    },
-    'type': {
-        'type': DataTypes.INTEGER,
-        'allowNull': true
     }
 };
 
